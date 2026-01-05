@@ -3,7 +3,10 @@
     "name": "ExpenseTrackerApp",
     "slug": "expense-tracker-app",
     "version": "1.0.0",
-    "platforms": ["android", "ios"],
+    "platforms": [
+      "android",
+      "ios"
+    ],
     "android": {
       "package": "com.shery_001.expensetrackerapp",
       "icon": "./assets/images/foreground.png",
@@ -20,6 +23,11 @@
       "image": "./assets/images/splash-icon.png",
       "resizeMode": "contain",
       "backgroundColor": "#FFFFFF"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "58c3bcb5-b9c7-43fd-bf1a-b2dacca43fed"
+      }
     }
   }
 }
