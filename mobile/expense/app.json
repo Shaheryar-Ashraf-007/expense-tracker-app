@@ -6,9 +6,9 @@
     "platforms": ["android", "ios"],
     "android": {
       "package": "com.shery_001.expensetrackerapp",
-      "icon": "./assets/images/android-icon-foreground.png",
+      "icon": "./assets/images/and-icon.png",
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/android-icon-foreground.png",
+        "foregroundImage": "./assets/images/foreground.png",
         "backgroundColor": "#FFFFFF"
       }
     },
