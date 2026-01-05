@@ -104,18 +104,24 @@ export const styles = StyleSheet.create({
     color: COLORS.text,
     marginBottom: 20,
   },
-  balanceStats: {
-    flexDirection: "row",
-    justifyContent: "space-between",
-  },
-  balanceStatItem: {
-    flex: 1,
-    alignItems: "center",
-  },
-  statDivider: {
-    borderRightWidth: 1,
-    borderColor: COLORS.border,
-  },
+ balanceStats: {
+  flexDirection: "row",
+  justifyContent: "space-between",
+  alignItems: "center",
+},
+
+balanceStatItem: {
+  flex: 1,
+  alignItems: "center",
+},
+
+statDivider: {
+  width: 1,
+  height: "100%",
+  backgroundColor: "#E5E7EB",
+  marginHorizontal: 12,
+},
+
   balanceStatLabel: {
     fontSize: 14,
     color: COLORS.textLight,
