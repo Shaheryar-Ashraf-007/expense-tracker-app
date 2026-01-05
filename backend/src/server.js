@@ -34,7 +34,7 @@ app.use("/api/health", (req, res) => {
 });
 
 // Transaction routes
-app.use("/api/transactions", transactionRouter);
+app.use("/api", transactionRouter);
 
 // Listen
 const port = process.env.PORT || 3000;
