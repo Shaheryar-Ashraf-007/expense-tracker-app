@@ -6,6 +6,10 @@ import transactionRouter from "./routers/transactionRoute.js"
 import rateLimiter from "./middleware/rateLimiter.js";
 // import cors from "cors";
 
+import job from "./config/crons.js";
+
+if (process.env.NODE_ENV === "production") job.start()
+
 
 dotenv.config();
 
@@ -19,6 +23,10 @@ app.use(rateLimiter);
 // }));
 
 app.use(express.json());
+
+app.use("/api/health", (req, res) => {
+  res.status(200).json({ status: "OK" });
+});
 
 app.use("/api/transactions", transactionRouter);
 
